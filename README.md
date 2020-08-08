@@ -25,12 +25,13 @@ public void test1() {
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given two numbers as strings. The numbers may be very large, the task is to find product of these two numbers.
+Given two numbers as strings.The task is to find product of these two numbers.
+
 ### Test Cases
 
 ```java
 @Test
 public void test2() {
-	assertEquals(1, FibBase.MultiplyStrings(1,1));
+	assertEquals(10000, FibBase.MultiplyStrings(500,20));
 }
 ```
