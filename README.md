@@ -21,7 +21,7 @@ public void test1() {
 	assertEquals(true, FibBase.almostPalindrome("abcba"));
 }
 ```
-## Question 1: Multiplying Strings
+## Question 2: Multiplying Strings
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
