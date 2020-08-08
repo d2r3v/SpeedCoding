@@ -16,4 +16,8 @@ public class QuestionsTest {
 		assertEquals(true, Questions.almostPalindrome("abcbea"));
 	}
 
+	@Test
+	public void test3() {
+		assertEquals(200, Questions.MultiplyStrings("50","4"));
+	}
 }

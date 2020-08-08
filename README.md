@@ -20,24 +20,17 @@ Given a string, we need to check whether it is possible to make the string a pal
 public void test1() {
 	assertEquals(true, FibBase.almostPalindrome("abcba"));
 }
+```
+## Question 1: Multiplying Strings
 
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given two numbers as strings. The numbers may be very large, the task is to find product of these two numbers.
+### Test Cases
+
+```java
 @Test
 public void test2() {
-	assertEquals(3, FibBase.ySum(1, 2));
-}
-
-@Test
-public void test3() {
-	assertEquals(7, FibBase.ySum(1, 3));
-}
-
-@Test
-public void test4() {
-	assertEquals(12, FibBase.ySum(1, 4));
-}
-
-@Test
-public void test5() {
-	assertEquals(20, FibBase.ySum(1, 5));
+	assertEquals(1, FibBase.MultiplyStrings(1,1));
 }
 ```

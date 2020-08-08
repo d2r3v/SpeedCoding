@@ -18,4 +18,9 @@ public static boolean almostPalindrome(String str)
 
 	return false;
 }
+public static int MultiplyStrings(String num1,String num2)
+{int a=0;
+	return a;
+}
+
 }
