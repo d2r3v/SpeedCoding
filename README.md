@@ -4,7 +4,7 @@ Speed Coding
 
 # General Instructions
 
-+ You have 60 minutes (1h) to complete the assigned tasks.
++ You have 60 minutes (1h 5m) to complete the assigned tasks.
 + Take your time to read the question.
 
 ## Question 1: Almost Palindrome
