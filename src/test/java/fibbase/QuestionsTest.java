@@ -22,8 +22,8 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test4() {
-		int[] a1= {1,2,3,4};
-		int[] a= {1,2,3,4};
-		assertArrayEquals(a1,Questions.SuperPalindrome(a));
+		int[] a1= {1,4,8,9,111,121,300,484};
+		int[] a= {4,9,121,484};
+		assertArrayEquals(a,Questions.SuperPalindrome(a1));
 	}
 }
