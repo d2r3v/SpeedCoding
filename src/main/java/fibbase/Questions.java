@@ -23,4 +23,9 @@ public static int MultiplyStrings(String num1,String num2)
 	return a;
 }
 
+public static int[] SuperPalindrome  (int[] a1)
+{
+    return a1;
+}
+
 }
