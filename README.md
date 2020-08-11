@@ -39,12 +39,27 @@ public void test2() {
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given a int, we need to check if the number is prime forwards as well as backwards.
+Given an integer, check whether that int forms a prime number forwards and backwards.
+
 ### Test Cases
 
 ```java
 @Test
 public void test1() {
-	assertEquals(true, FibBase.trueorfalse(13));
+	assertEquals(true, FibBase.trueorfalse(17));
+}
+```
+## Question 4: Average number of letters and sentences per 100 words
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string, print the average number of letters per 100 words and the average number of sentences per 100 words.
+
+### Test Cases
+
+```java
+@Test
+public void test2() {
+	assertEquals({464, 28}, FibBase.averagestring("Congratulations! Today is your day. You're off to Great Places! You're off and away!"));
 }
 ```
