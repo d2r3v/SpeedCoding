@@ -35,3 +35,17 @@ public void test2() {
 	assertEquals(10000, FibBase.MultiplyStrings(500,20));
 }
 ```
+## Question 3: Prime backwards and forwards
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string, we need to check whether it is possible to make the string a palindrome after removing exactly one character from it.
+
+### Test Cases
+
+```java
+@Test
+public void test1() {
+	assertEquals(true, FibBase.trueorfalse(13));
+}
+```

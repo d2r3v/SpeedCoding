@@ -27,5 +27,15 @@ public static int[] SuperPalindrome  (int[] a1)
 {
     return a1;
 }
+public static int m(int n,int m )
+{
+
+	return n;
+}
+public   static boolean trueorfalse(int n)
+{
+
+    return false;
+}
 
 }

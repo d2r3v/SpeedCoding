@@ -26,4 +26,9 @@ public class QuestionsTest {
 		int[] a= {4,9,121,484};
 		assertArrayEquals(a,Questions.SuperPalindrome(a1));
 	}
+	@Test
+	public void test5() {
+		assertEquals(true, Questions.trueorfalse(13));
+	}
+
 }
