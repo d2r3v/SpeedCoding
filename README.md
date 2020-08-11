@@ -4,7 +4,7 @@ Speed Coding
 
 # General Instructions
 
-+ You have 60 minutes (1h 5m) to complete the assigned tasks.
++ You have 60 minutes (1h) to complete the assigned tasks.
 + Take your time to read the question.
 
 ## Question 1: Almost Palindrome
@@ -39,8 +39,7 @@ public void test2() {
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given a string, we need to check whether it is possible to make the string a palindrome after removing exactly one character from it.
-
+Given a int, we need to check if the number is prime forwards as well as backwards.
 ### Test Cases
 
 ```java
