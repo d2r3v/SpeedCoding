@@ -37,5 +37,20 @@ public   static boolean trueorfalse(int n)
 
     return false;
 }
+public   static int findgcd(int n, int m)
+{
+	int a = 0;
+    return a;
+}
+public   static int[] averagestring(String a1)
+{
+	int[] a = {};
+	return a;
+}
+public static String potential(String n)
+{
+	String m = "";
+	return m;
+}
 
 }
