@@ -196,8 +196,9 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test40() {
-		int[] a = {1,2,4,6,5,8,10,3};
-		assertEquals(true, Questions.positive(a));
+		char[] a = {'e', 't', 's, 't'};
+		int[] b = {1, 3, 2, 0};
+		assertEquals("test", Questions.rearrange(a,b));
 	}
 	@Test
 	public void test41() {
@@ -231,15 +232,20 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test48() {
+		int[] a = {20, 22, 24, 3, 26, 2, 1};
+		assertEquals(true, Questions.even(a));
+	}
+	@Test
+	public void test49() {
 		int[][] a = {{1,2,3,4}, {4,3,2,1}, {7,8,9,6}, {6,5,4,3}};
 		assertEquals(36, Questions.diagonals(a));
 	}
 	@Test
-	public void test49() {
+	public void test50() {
 		assertEquals("gnimmargorP ssalC", Questions.reverse("Programming Class"));
 	}
 	@Test
-	public void test50() {
+	public void test51() {
 		int[] a = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55};
 		assertEquals(a, Questions.triangular(10));
 	}
