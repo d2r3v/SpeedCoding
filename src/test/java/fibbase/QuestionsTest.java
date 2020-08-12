@@ -149,6 +149,11 @@ public class QuestionsTest {
 	{
 		assertEquals(true, Questions.happy(203));
 	}
+	@Test
+	public void test31()
+	{
+		assertEquals(3702, Questions.series2(4));
+	}
 	
 	
 	
