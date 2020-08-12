@@ -643,7 +643,7 @@ Given an array of words, arrange them in alphabetical order and return them.
 public void test42() {
 	String[] a = {"hackathon", "coding", "programming" ,"files"};
 	String[] b = {"coding", "files", "hackathon", "programming"};
-	assertEquals(b, FibBase.alphabetical(a));
+	assertEquals(b, FibBase.alphasort(a));
 }
 ```
 ## Question 43: Double letters
@@ -707,19 +707,19 @@ public void test46() {
 }
 ```
 
-## Question 47: Semi prime numbers
+## Question 47: Even dominant
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Determine whether a given number is a semi prime one.
-A semiprime is a composite number that is the product of two primes. Apart from these two primes, its only other proper (non-self) divisor is 1. The two prime factors of a semiprime can be the same number or two distinct prime factors. 
+Determine whether an array contains more even numbers than odd.
 
 ### Test Cases
 
 ```java
 @Test
 public void test47() {
-	assertEquals(true, FibBase.piglatin(15));
+	int[] a = {1, 2, 4, 6, 8, 14, 18, 3};
+	assertEquals(true, FibBase.even(15));
 }
 ```
 ## Question 48: Sum of diagonals
