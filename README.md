@@ -461,3 +461,309 @@ public void test30() {
 	assertEquals(37035, FibBase.series2(5));
 }
 ```
+## Question 31: Missing number
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a list of n-1 integers in the range of 1 to n, there is one integer missing from the list. Return the missing integer.
+Note: There are no duplicates in the list.
+
+### Test Cases
+
+```java
+@Test
+public void test31() {
+	int[] a = {10,11,16,13,12,15,17,18,19};
+	assertEquals(14, FibBase.missingnum(a));
+}
+```
+## Question 32: Apocalyptic number
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Determine whether a number is apocalyptic or not.
+A number n is apocalyptic if 2^n contains a string of 3 consecutive 6s.
+
+### Test Cases
+
+```java
+@Test
+public void test32() {
+	assertEquals(true, FibBase.apocalyptic(192));
+}
+```
+## Question 33: Alternating positions
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given an array, determine whether the the elements at alternate positions are positive and negative, respectively.
+
+### Test Cases
+
+```java
+@Test
+public void test33() {
+	int[] a = {-10,11,-16,13,-12,15,-17,18,-19};
+	assertEquals(true, FibBase.alternate(a));
+}
+```
+## Question 34: Almost-sorted array
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given an array, determine whether the it is an almost sorted array.
+An almost-sorted sequence is a sequence that is strictly increasing if you remove a single element from the array (no more, no less).
+
+### Test Cases
+
+```java
+@Test
+public void test34() {
+	int[] a = {2,5,7,8,3,10,13,14};
+	assertEquals(true, FibBase.sorting(a));
+}
+```
+## Question 35: Encryption
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a word, return its changed form according to the following steps:
+Reverse the word 
+Replace each vowel with its ASCII value, do integer division and divide it by two. 
+Add “aca” to the end of the word 
+
+### Test Cases
+
+```java
+@Test
+public void test35() {
+	assertEquals("50d55caca", FibBase.sorting("code"));
+}
+```
+## Question 36: Diagonal matrix
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a matrix, determine whether it is a diagonal matrix or not.
+A matrix is said to be diagonal if all elements M[i][j] with i different from j (i.e., that are not on the main diagonal) are equal to 0
+
+### Test Cases
+
+```java
+@Test
+public void test36() {
+	int[][] a = {{4,0},{0,3}};
+	assertEquals(true, FibBase.diagonalmatrix(a));
+}
+```
+## Question 37: Armstrong numbers
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given an integer, check whether it is an armstrong number or not.
+An armstrong number is one that is equal to the sum of cubes of its digits.
+
+### Test Cases
+
+```java
+@Test
+public void test37() {
+	assertEquals(true, FibBase.armstrong(1634));
+}
+```
+## Question 38: Kempner numbers
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Return the kempner number of a particular number n.
+A kempner number for a particular number n may be defined as the smallest number s, such that s! Is divisible by n
+
+### Test Cases
+
+```java
+@Test
+public void test38() {
+	assertEquals(5, FibBase.kempner(10));
+}
+```
+## Question 39: Rearrange letters
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given two arrays, one containing the scrambled word and the other containing the correct positions, form the new word.
+
+### Test Cases
+
+```java
+@Test
+public void test39() {
+	char[] a = {'e', 'c', 'o', 'd'};
+	int[] b = {3,0,1,2};
+	assertEquals("code", FibBase.rearrange(a,b));
+}
+```
+## Question 40: Ascending and repeating digits
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Determine whether a given number’s digits are in ascending order and if they are repeating.
+
+### Test Cases
+
+```java
+@Test
+public void test40() {
+	assertEquals(true, FibBase.ascending(113335566));
+}
+```
+## Question 41: Descending and repeating digits
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Determine whether a given number’s digits are in descending order and if they are repeating.
+
+### Test Cases
+
+```java
+@Test
+public void test41() {
+	assertEquals(true, FibBase.descending(77443322111));
+}
+```
+## Question 42: Alphabetical order
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given an array of words, arrange them in alphabetical order and return them.
+
+### Test Cases
+
+```java
+@Test
+public void test42() {
+	String[] a = {"hackathon", "coding", "programming" ,"files"};
+	String[] b = {"coding", "files", "hackathon", "programming"};
+	assertEquals(b, FibBase.alphabetical(a));
+}
+```
+## Question 43: Double letters
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string, return the number of double letter sequences that exist in the string.
+
+### Test Cases
+
+```java
+@Test
+public void test43() {
+	assertEquals(2, FibBase.sorting("She needs the door to be opened"));
+}
+```
+## Question 44: Pig latin
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Return a given word's pig latin translation. 
+If a word starts with a consonant, move the first letter(s) of the word, till you reach a vowel, to the end of the word and add "ay" to the end. 
+If a word starts with a vowel add "yay" to the end of the word. 
+
+### Test Cases
+
+```java
+@Test
+public void test44() {
+	assertEquals("ateyay", FibBase.piglatin("ate"));
+}
+```
+## Question 45: Semi prime numbers
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Determine whether a given number is a semi prime one.
+A semiprime is a composite number that is the product of two primes. Apart from these two primes, its only other proper (non-self) divisor is 1. The two prime factors of a semiprime can be the same number or two distinct prime factors. 
+
+### Test Cases
+
+```java
+@Test
+public void test45() {
+	assertEquals(true, FibBase.semiprime(15));
+}
+```
+## Question 46: Primal strength
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Determine whether a given number is balanced.
+A prime number is balanced if it is equidistant from the prime before it and the prime after it.
+
+### Test Cases
+
+```java
+@Test
+public void test46() {
+	assertEquals(true, FibBase.balanced(53));
+}
+```
+
+## Question 47: Semi prime numbers
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Determine whether a given number is a semi prime one.
+A semiprime is a composite number that is the product of two primes. Apart from these two primes, its only other proper (non-self) divisor is 1. The two prime factors of a semiprime can be the same number or two distinct prime factors. 
+
+### Test Cases
+
+```java
+@Test
+public void test47() {
+	assertEquals(true, FibBase.piglatin(15));
+}
+```
+## Question 48: Sum of diagonals
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a matrix, return the sum of the primary and secondary diagonal.
+
+### Test Cases
+
+```java
+@Test
+public void test48() {
+	int[][] a = {{1,3,5},{7,9,8},{6,4,2}};
+	assertEquals(32, FibBase.diagonals(a));
+}
+```
+# Question 49: Reversing a string
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string, reverse each word and return the new formed string.
+
+### Test Cases
+
+```java
+@Test
+public void test49() {
+	assertEquals("sredoc ,olleh", FibBase.reverse("hello, coders"));
+}
+```
+# Question 50: Triangular number sequence.
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Return the triangular number sequence till n.
+A triangular number is a figurative number that can be represented in the form of an equilateral triangular grid of elements such that every subsequent row contains an element more than the previous one.
+
+### Test Cases
+
+```java
+@Test
+public void test50() {
+	int[] a = {1, 3, 6, 10, 15};
+	assertEquals(a, FibBase.triangular(5));
+}
+```
