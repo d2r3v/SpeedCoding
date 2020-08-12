@@ -175,7 +175,7 @@ public static int alternate(int[] n)
 }
 public static boolean sorting(int[] n)
 {
-		return false;
+	return false;
 }
 public static String encrypt(String n)
 {
@@ -188,16 +188,17 @@ public static boolean diagonalmatrix(int[][] n)
 }
 public static boolean armstrong(int n)
 {
-		return false;
+	return false;
 }
 public static int kempner(int n)
 {
 	int a = 0;
 	return a;
 }
-public static boolean positive (int[] n)
+public static boolean rearrange (char[] a, int[] n)
 {
-	return false;
+	String str = "";
+	return str;
 }
 public static boolean ascending(int n)
 {
@@ -227,6 +228,10 @@ public static boolean semiprime(int n)
 	return false;
 }
 public static boolean balanced(int n)
+{
+	return false;
+}
+public static boolean even(int[] n)
 {
 	return false;
 }
