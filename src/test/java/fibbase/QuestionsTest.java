@@ -113,11 +113,13 @@ public class QuestionsTest {
 		assertEquals(200, Questions.parcel(320));
 	}
 	@Test
-	public void test23() {
+	public void test23()
+	{
 		assertEquals("oa", Questions.vowels("programming", 2));
 	}
 	@Test
-	public void test24() {
+	public void test24()
+	{
 		assertEquals('h', Questions.maxfreq("hackathon"));
 	}
 	@Test
@@ -154,7 +156,91 @@ public class QuestionsTest {
 	{
 		assertEquals(3702, Questions.series2(4));
 	}
-	
-	
-	
+	@Test
+	public void test32() {
+		int[] a  = {1,2,4,6,3,7,8};
+		assertEquals(5, Questions.missingnum(a));
+	}
+	@Test
+	public void test33()
+	{
+		assertEquals(true, Questions.apocalyptic(109));
+	}
+	@Test
+	public void test34()
+	{
+		int[] a  = {-1,2,-4,6,-3,7,-8};
+		assertEquals(5, Questions.alternate(a));
+	}
+	@Test
+	public void test35() {
+		int[] a  = {1,3,5,9,11,80,15,33,37,41};
+		assertEquals(true, Questions.sorting(a));
+	}
+	@Test
+	public void test36() {
+		assertEquals("50lpp48aca", Questions.encrypt("apple"));
+	}
+	@Test
+	public void test37() {
+		int[][] m  = {{2,0},{0,4}};
+		assertEquals(true, Questions.diagonalmatrix(m));
+	}
+	@Test
+	public void test38() {
+		assertEquals(true, Questions.armstrong(153));
+	}
+	@Test
+	public void test39() {
+		assertEquals(5, Questions.kempner(5));
+	}
+	@Test
+	public void test40() {
+		int[] a = {1,2,4,6,5,8,10,3};
+		assertEquals(true, Questions.positive(a));
+	}
+	@Test
+	public void test41() {
+		assertEquals(true, Questions.ascending(114455777));
+	}
+	@Test
+	public void test42() {
+		assertEquals(true, Questions.descending(998887755));
+	}
+	@Test
+	public void test43() {
+		String[] a = {"Delhi", "Bangalore", "Agra", "Mumbai"};
+		String[] b = {"Agra", "Bangalore", "Delhi", "Mumbai"};
+		assertEquals(b, Questions.alphasort(a));
+	}
+	@Test
+	public void test44() {
+		assertEquals(4, Questions.doubleletter("She was feeding the little rabbit with an apple"));
+	}
+	@Test
+	public void test45() {
+		assertEquals("avehay", Questions.piglatin("have"));
+	}
+	@Test
+	public void test46() {
+		assertEquals(true, Questions.semiprime(49));
+	}
+	@Test
+	public void test47() {
+		assertEquals(true, Questions.balanced(5));
+	}
+	@Test
+	public void test48() {
+		int[][] a = {{1,2,3,4}, {4,3,2,1}, {7,8,9,6}, {6,5,4,3}};
+		assertEquals(36, Questions.diagonals(a));
+	}
+	@Test
+	public void test49() {
+		assertEquals("gnimmargorP ssalC", Questions.reverse("Programming Class"));
+	}
+	@Test
+	public void test50() {
+		int[] a = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55};
+		assertEquals(a, Questions.triangular(10));
+	}
 }

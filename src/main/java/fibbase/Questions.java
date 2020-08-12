@@ -15,7 +15,6 @@ public static int Divide(int m, int n)
 public static boolean almostPalindrome(String str)
 {
 
-
 	return false;
 }
 public static int MultiplyStrings(String num1,String num2)
@@ -138,8 +137,8 @@ public static String dashes(int n)
 }
 public static String[] permutations(String n)
 {
-	String[] a = {};
-	return a;
+	String[] str = {};
+	return str;
 }
 public static char repeat(String n)
 {
@@ -158,6 +157,92 @@ public static boolean happy(int n)
 public static int series2(int n)
 {
 	int a = 0;
+	return a;
+}
+public static int missingnum(int[] n)
+{
+	int a = 0;
+	return a;
+}
+public static boolean apocalyptic(int n)
+{
+	return false;
+}
+public static int alternate(int[] n)
+{
+	int a = 0;
+	return a;
+}
+public static boolean sorting(int[] n)
+{
+		return false;
+}
+public static String encrypt(String n)
+{
+	String a = "";
+	return a;
+}
+public static boolean diagonalmatrix(int[][] n)
+{
+	return false;
+}
+public static boolean armstrong(int n)
+{
+		return false;
+}
+public static int kempner(int n)
+{
+	int a = 0;
+	return a;
+}
+public static boolean positive (int[] n)
+{
+	return false;
+}
+public static boolean ascending(int n)
+{
+	return false;
+}
+public static boolean descending(int n)
+{
+	return false;
+}
+public static String[] alphasort(String[] n)
+{
+	String[] a = {};
+	return a;
+}
+public static int doubleletter(String n)
+{
+	int a = 0;
+	return a;
+}
+public static String piglatin(String n)
+{
+	String a = "";
+	return a;
+}
+public static boolean semiprime(int n)
+{
+	return false;
+}
+public static boolean balanced(int n)
+{
+	return false;
+}
+public static int diagonals(int[][] n)
+{
+	int a = 0;
+	return a;
+}
+public static String reverse(String n)
+{
+	String a = "";
+	return a;
+}
+public static int[] triangular(int n)
+{
+	int a[] = {};
 	return a;
 }
 }
