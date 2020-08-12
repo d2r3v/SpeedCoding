@@ -105,7 +105,7 @@ public class QuestionsTest {
 	@Test
 	public void test21() {
 
-		assertEquals(560.0, Questions.netbill(450));
+		assertEquals(560.0, Questions.netbill(450.0));
 	}
 	@Test
 	public void test22() {

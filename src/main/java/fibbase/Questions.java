@@ -106,7 +106,7 @@ public static boolean anagram(String n, String m)
 {
 	return false;
 }
-public static Double netbill(int n)
+public static double netbill(double n)
 {
 	double a = 0.0;
 	return a;
@@ -123,7 +123,7 @@ public static String vowels(String n, int m)
 }	
 public static char maxfreq(String n)
 {
-	char ch = '';
+	char ch = '0';
 	return ch;
 }
 public static int lastindex(String n)
@@ -143,7 +143,7 @@ public static String[] permutations(String n)
 }
 public static char repeat(String n)
 {
-	char ch = '';
+	char ch = '0';
 	return ch;
 }
 public static int singledigit(int n)
@@ -155,7 +155,7 @@ public static boolean happy(int n)
 {
 	return false;
 }
-public static boolean series2(int n)
+public static int series2(int n)
 {
 	int a = 0;
 	return a;
