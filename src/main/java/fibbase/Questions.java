@@ -31,7 +31,7 @@ public static int m(int n,int m )
 {
 
 	return n;
-}
+} 
 public   static boolean trueorfalse(int n)
 {
 
