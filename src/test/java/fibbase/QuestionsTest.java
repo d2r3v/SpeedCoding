@@ -100,5 +100,48 @@ public class QuestionsTest {
 	public void test20() {
 		assertEquals(true, Questions.anagram("listen","silent"));
 	}
+	@Test
+	public void test21() {
+		assertEquals(560.0, Questions.netbill(450));
+	}
+	@Test
+	public void test22() {
+		assertEquals(200, Questions.parcel(320));
+	}
+	@Test
+	public void test23() {
+		assertEquals("oa", Questions.vowels("programming", 2));
+	}
+	@Test
+	public void test24() {
+		assertEquals('h', Questions.maxfreq("hackathon"));
+	}
+	@Test
+	public void test25() {
+		assertEquals(8, Questions.lastindex("0010010010"));
+	}
+	@Test
+	public void test26() {
+		assertEquals("---", Questions.dashes(3));
+	}
+	@Test
+	public void test27() {
+		String[] a = {"ABC", "ACB", "BAC", "BCA","CBA", "CAB"};
+		assertEquals(a, Questions.permutations("ABC"));
+	}
+	@Test
+	public void test28() {
+		assertEquals('l', Questions.repeat("legolas"));
+	}
+	@Test
+	public void test29() {
+		assertEquals(3, Questions.singledigit(147));
+	}
+	@Test
+	public void test30() {
+		assertEquals(true, Questions.happy(203));
+	}
+	
+	
 	
 }
