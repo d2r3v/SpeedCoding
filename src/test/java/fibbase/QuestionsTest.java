@@ -196,7 +196,7 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test40() {
-		char[] a = {'e', 't', 's, 't'};
+		char[] a = {'e', 't', 's', 't'};
 		int[] b = {1, 3, 2, 0};
 		assertEquals("test", Questions.rearrange(a,b));
 	}
