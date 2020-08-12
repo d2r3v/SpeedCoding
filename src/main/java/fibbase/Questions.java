@@ -81,12 +81,10 @@ public static int[] prime(int n)
 	return a;
 }
 public static boolean automorphic(int n)
-
 {
 	return false;
 }
 public static boolean alphabetical(String n)
-
 {
 	return false;
 }
@@ -107,5 +105,59 @@ public static int series1(int n)
 public static boolean anagram(String n, String m)
 {
 	return false;
+}
+public static Double netbill(int n)
+{
+	double a = 0.0;
+	return a;
+}
+public static int parcel(int n)
+{
+	int a = 0;
+	return a;
+}
+public static String vowels(String n, int m)
+{
+	String a = "";
+	return a;
+}	
+public static char maxfreq(String n)
+{
+	char ch = '';
+	return ch;
+}
+public static int lastindex(String n)
+{
+	int a  = 0;
+	return a;
+}
+public static String dashes(int n)
+{
+	String a = "";
+	return a;
+}
+public static String[] permutations(String n)
+{
+	String[] a = {};
+	return a;
+}
+public static char repeat(String n)
+{
+	char ch = '';
+	return ch;
+}
+public static int singledigit(int n)
+{
+	int a = 0;
+	return a;
+}
+public static boolean happy(int n)
+{
+	return false;
+}
+public static boolean series2(int n)
+{
+	int a = 0;
+	return a;
 }
 }
