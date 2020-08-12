@@ -53,6 +53,7 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test10() {
+
 		assertEquals(".java", Questions.filename("helloworld.java"));
 	}
 	@Test
@@ -80,6 +81,7 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test16() {
+
 		assertEquals(true, Questions.alphabetical("abdef"));
 	}
 	@Test
@@ -102,10 +104,12 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test21() {
+
 		assertEquals(560.0, Questions.netbill(450));
 	}
 	@Test
 	public void test22() {
+
 		assertEquals(200, Questions.parcel(320));
 	}
 	@Test
@@ -118,6 +122,7 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test25() {
+
 		assertEquals(8, Questions.lastindex("0010010010"));
 	}
 	@Test
@@ -131,14 +136,17 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test28() {
+
 		assertEquals('l', Questions.repeat("legolas"));
 	}
 	@Test
 	public void test29() {
+
 		assertEquals(3, Questions.singledigit(147));
 	}
 	@Test
-	public void test30() {
+	public void test30()
+	{
 		assertEquals(true, Questions.happy(203));
 	}
 	

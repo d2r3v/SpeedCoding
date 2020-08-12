@@ -81,10 +81,12 @@ public static int[] prime(int n)
 	return a;
 }
 public static boolean automorphic(int n)
+
 {
 	return false;
 }
 public static boolean alphabetical(String n)
+
 {
 	return false;
 }
