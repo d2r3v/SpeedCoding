@@ -288,4 +288,175 @@ public void test19() {
 	assertEquals(true, FibBase.anagram("triangle", "integral"));
 }
 ```
+## Question 20: Calculating the net bill
 
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Return the net bill to be paid by a consumer. The net bill to be paid by a consumer includes a rent of Rs. 250 charged by a consumer. 
+
+Units ---- Charge per Unit
+
+First 100 ----- 40 p
+
+Next 200 ----- 60 p
+
+Above 300 ----- Rs 1
+
+
+### Test Cases
+
+```java
+@Test
+public void test20() {
+	assertEquals(640.0, FibBase.netbill(530));
+}
+```
+## Question 21: Courier service rates
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+A courier service provides a speed service for any letter/parcel to Mumbai which delivers on the same day as per the rates given below:
+
+Up to 100 grams:                               	        	= Rs. 80/-
+
+For each additional 100 gram or part thereof    		= Rs. 40/-
+
+Return the net bill to be paid.
+
+### Test Cases
+
+```java
+@Test
+public void test21() {
+	assertEquals(280, FibBase.parcel(520));
+}
+```
+## Question 22: Finding vowels
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Return the first n vowels in a given string.
+
+### Test Cases
+
+```java
+@Test
+public void test22() {
+	assertEquals("aao", FibBase.vowels("hackathon", 3));
+}
+```
+## Question 23: Maximum frequency of a character
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string, return the first character with maximum frequency.
+
+### Test Cases
+
+```java
+@Test
+public void test23() {
+	assertEquals('t', FibBase.maxfreq("tests"));
+}
+```
+## Question 24: Finding the last index
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string consisting only '0's and '1's,  return the last index of the '1' present in it.
+
+### Test Cases
+
+```java
+@Test
+public void test24() {
+	assertEquals(7, FibBase.lastindex("010010010"));
+}
+```
+## Question 25: Number to dashes
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Convert the given integer into a string of dashes of that number and return the string.
+
+### Test Cases
+
+```java
+@Test
+public void test25() {
+	assertEquals("-----", FibBase.dashes(5));
+}
+```
+## Question 26: Finding permutations
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string, return all of its possible permutations.
+
+### Test Cases
+
+```java
+@Test
+public void test26() {
+	String[] a = {"cde", "ced", "dce", "dec", "ecd", "edc"};
+	assertEquals(a, FibBase.permutations("cde"));
+}
+```
+## Question 27: First repeating character
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given a string, return the first character that repeats.
+
+### Test Cases
+
+```java
+@Test
+public void test27() {
+	assertEquals('a', FibBase.repeat("gandalf"));
+}
+```
+## Question 28: Converting to a single digit
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given an integer, find the sum of the digits of the number until it becomes a single digit. Return the single digit.
+
+### Test Cases
+
+```java
+@Test
+public void test28() {
+	assertEquals(1, FibBase.singledigit(1234));
+}
+```
+## Question 29: Happy numbers
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given an integer, check whether it is a happy number or not.
+A happy number is one in which the number which eventually reaches 1 when replaced by the sum of the square of each digit.
+
+### Test Cases
+
+```java
+@Test
+public void test29() {
+	assertEquals(true, FibBase.happy(19));
+}
+```
+## Question 30: Sum of series
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given an integer, check whether it is a happy number or not.
+A happy number is one in which the number which eventually reaches 1 when replaced by the sum of the square of each digit.
+
+### Test Cases
+
+```java
+@Test
+public void test30() {
+	assertEquals(37035, FibBase.series2(5));
+}
+```
