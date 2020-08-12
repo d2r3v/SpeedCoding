@@ -449,8 +449,9 @@ public void test29() {
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given an integer, check whether it is a happy number or not.
-A happy number is one in which the number which eventually reaches 1 when replaced by the sum of the square of each digit.
+Return the sum of the series up till n terms:
+3+33+333…
+
 
 ### Test Cases
 
