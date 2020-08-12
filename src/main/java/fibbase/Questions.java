@@ -19,7 +19,8 @@ public static boolean almostPalindrome(String str)
 	return false;
 }
 public static int MultiplyStrings(String num1,String num2)
-{int a=0;
+{	
+	int a=0;
 	return a;
 }
 
@@ -40,7 +41,7 @@ public   static boolean trueorfalse(int n)
 public   static int findgcd(int n, int m)
 {
 	int a = 0;
-    return a;
+   	return a;
 }
 public   static int[] averagestring(String a1)
 {
@@ -52,5 +53,57 @@ public static String potential(String n)
 	String m = "";
 	return m;
 }
-
+public static int[] series(int n)
+{
+	int[] a = {};
+	return a;
+}
+public static String filename(String n)
+{
+	String m = "";
+	return m;
+}
+public static boolean disarium(int n)
+{
+	return false;
+}
+public static boolean special(int n)
+{
+	return false;
+}
+public static boolean equalarr(int[] a, int[] b)
+{
+	return false;
+}
+public static int[] prime(int n)
+{
+	int[] a = {};
+	return a;
+}
+public static boolean automorphic(int n)
+{
+	return false;
+}
+public static boolean alphabetical(String n)
+{
+	return false;
+}
+public static String arrtostr(char[] a)
+{
+	String m = "";
+	return m;
+}
+public static boolean specialarr(int[] a)
+{
+	return false;
+}
+public static int series1(int n)
+{
+	int a  = 0;
+	return a;
+}
+public static boolean anagram(String n, String m)
+{
+	return false;
+}
 }
