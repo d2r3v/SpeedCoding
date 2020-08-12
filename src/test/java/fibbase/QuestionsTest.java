@@ -164,7 +164,7 @@ public class QuestionsTest {
 	@Test
 	public void test33()
 	{
-		assertEquals(true, Questions.apocalyptic(109));
+		assertEquals(true, Questions.apocalyptic(157));
 	}
 	@Test
 	public void test34()
