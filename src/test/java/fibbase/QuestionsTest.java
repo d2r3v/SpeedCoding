@@ -46,5 +46,59 @@ public class QuestionsTest {
 		String a = "DO DO HOW YOU";
 		assertEquals(a, Questions.potential(a1));
 	}
-
+	@Test
+	public void test9() {
+		int[] a = {0, 3, 8, 15, 24, 35};
+		assertEquals(a, Questions.series(6));
+	}
+	@Test
+	public void test10() {
+		assertEquals(".java", Questions.filename("helloworld.java"));
+	}
+	@Test
+	public void test11() {
+		assertEquals(true, Questions.disarium(89));
+	}
+	@Test
+	public void test12() {
+		assertEquals(true, Questions.special(40585));
+	}
+	@Test
+	public void test13() {
+		int[] a = {51,42,23,74};
+		int[] b = {51,42,23,74};
+		assertEquals(true, Questions.equalarr(a,b));
+	}
+	@Test
+	public void test14() {
+		int[] a = {2,2,2,3};
+		assertEquals(a, Questions.prime(24));
+	}
+	@Test
+	public void test15() {
+		assertEquals(true, Questions.automorphic(76));
+	}
+	@Test
+	public void test16() {
+		assertEquals(true, Questions.alphabetical("abdef"));
+	}
+	@Test
+	public void test17() {
+		char[] a = {'c', 'o', 'd', 'i', 'n', 'g'};
+		assertEquals("[c, o, d, i, n, g]", Questions.arrtostr(a));
+	}
+	@Test
+	public void test18() {
+		int[] a = {4,5,8,11,14,25,18};
+		assertEquals(true, Questions.specialarr(a));
+	}
+	@Test
+	public void test19() {
+		assertEquals(127, Questions.series1(6));
+	}
+	@Test
+	public void test20() {
+		assertEquals(true, Questions.anagram("listen","silent"));
+	}
+	
 }
