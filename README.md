@@ -454,27 +454,28 @@ Return the sum of the series up till n terms:
 
 
 ### Test Cases
-
+__
 ```java
 @Test
 public void test30() {
 	assertEquals(37035, FibBase.series2(5));
 }
 ```
+
 ## Question 31: Missing number
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given a list of n-1 integers in the range of 1 to n, there is one integer missing from the list. Return the missing integer.
-Note: There are no duplicates in the list.
+Given a list of numbers in the range of 1 to n (inclusive of both) and length n-1, there is one number missing from the list. Return the missing number.
+Note: There are no duplicates in the list. The array may be unsorted.
 
 ### Test Cases
 
 ```java
 @Test
 public void test31() {
-	int[] a = {10,11,16,13,12,15,17,18,19};
-	assertEquals(14, FibBase.missingnum(a));
+	int[] a = {1, 2, 3, 5};
+	assertEquals(4, FibBase.missingnum(a,5));
 }
 ```
 ## Question 32: Apocalyptic number
@@ -504,7 +505,7 @@ Given an array, determine whether the the elements at alternate positions are po
 @Test
 public void test33() {
 	int[] a = {-10,11,-16,13,-12,15,-17,18,-19};
-	assertEquals(true, FibBase.alternate(a));
+	assertEquals(true, FibBase.alternate(a, 9));
 }
 ```
 ## Question 34: Almost-sorted array
@@ -520,7 +521,7 @@ An almost-sorted sequence is a sequence that is strictly increasing if you remov
 @Test
 public void test34() {
 	int[] a = {2,5,7,8,3,10,13,14};
-	assertEquals(true, FibBase.sorting(a));
+	assertEquals(true, FibBase.sorting(a, 8));
 }
 ```
 ## Question 35: Encryption

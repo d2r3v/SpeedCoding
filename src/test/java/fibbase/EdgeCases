@@ -5,23 +5,23 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class EdgeCases {
-
+    double delta1 = 0.0001;
     @Test
     public void test1() {
-        assertEquals("invalid", Questions.Divide(1, 0));
+        assertEquals(0, Questions.Divide(1, 0));
     }
 
     @Test
     public void test2() {
-        assertEquals("invalid", Questions.almostPalindrome(""));
-        assertEquals("invalid", Questions.almostPalindrome("abcbea "));
+        assertEquals(false, Questions.almostPalindrome(""));
+        assertEquals(false, Questions.almostPalindrome("abcbea "));
 
     }
 
     @Test
     public void test3() {
-        assertEquals("invalid", Questions.MultiplyStrings("",""));
-        assertEquals("invalid", Questions.MultiplyStrings("a","b"));
+        assertEquals(0, Questions.MultiplyStrings("",""));
+        assertEquals(0, Questions.MultiplyStrings("a","b"));
     }
     @Test
     public void test4() {
@@ -31,16 +31,17 @@ public class EdgeCases {
     }
     @Test
     public void test5() {
-        assertEquals("invalid", Questions.trueorfalse(0));
+        assertEquals(false, Questions.trueorfalse(0));
     }
     @Test
     public void test6() {
-        assertEquals("invalid", Questions.findgcd(0, 16));
+        assertEquals(0, Questions.findgcd(0, 16));
     }
     @Test
     public void test7() {
-        assertEquals("invalid", Questions.averagestring(""));
-        assertEquals("invalid", Questions.averagestring("1234"));
+        int[] n = {0};
+        assertEquals(n, Questions.averagestring(""));
+        assertEquals(n, Questions.averagestring("1234"));
     }
     @Test
     public void test8() {
@@ -49,9 +50,9 @@ public class EdgeCases {
     }
     @Test
     public void test9() {
-        int[] a = {0, 3, 8, 15, 24, 35};
-        assertEquals("invalid", Questions.series(-1));
-        assertEquals("invalid", Questions.series(0));
+        int[] n = {0};
+        assertEquals(n, Questions.series(-1));
+        assertEquals(n, Questions.series(0));
     }
     @Test
     public void test10() {
@@ -60,33 +61,33 @@ public class EdgeCases {
     }
     @Test
     public void test11() {
-        assertEquals("invalid", Questions.disarium(0));
-        assertEquals("invalid", Questions.disarium(-135));
+        assertEquals(false, Questions.disarium(0));
+        assertEquals(false, Questions.disarium(-135));
     }
     @Test
     public void test12() {
-        assertEquals("invalid", Questions.special(40585));
+        assertEquals(false, Questions.special(40585));
     }
     @Test
     public void test13() {
         int[] a = {};
         int[] b = {5,6,7};
-        assertEquals("invalid", Questions.equalarr(a,b));
+        assertEquals(false, Questions.equalarr(a,b, 0, 3));
     }
     @Test
     public void test14() {
-        int[] a = {2,2,2,3};
-        assertEquals("invalid", Questions.prime(0));
+        int[] a = {0};
+        assertEquals(a, Questions.prime(0));
     }
     @Test
     public void test15() {
-        assertEquals("invalid", Questions.automorphic(0));
+        assertEquals(false, Questions.automorphic(0));
     }
     @Test
     public void test16() {
 
-        assertEquals("invalid", Questions.alphabetical(""));
-        assertEquals("invalid", Questions.alphabetical(""));
+        assertEquals(false, Questions.alphabetical(""));
+        assertEquals(false, Questions.alphabetical(""));
     }
     @Test
     public void test17() {
@@ -96,156 +97,176 @@ public class EdgeCases {
     @Test
     public void test18() {
         int[] a = {};
-        assertEquals("invalid", Questions.specialarr(a));
+        assertEquals(false, Questions.specialarr(a, 0));
     }
     @Test
     public void test19() {
-        assertEquals("invalid", Questions.series1(-1));
-        assertEquals("invalid", Questions.series1(0));
+        assertEquals(0, Questions.series1(-1));
+        assertEquals(0, Questions.series1(0));
     }
     @Test
     public void test20() {
-        assertEquals(true, Questions.anagram("listen","silent"));
+        assertEquals(false, Questions.anagram("","silent"));
+        assertEquals(false, Questions.anagram("",""));
+        assertEquals(false, Questions.anagram("4321","1234"));
     }
     @Test
     public void test21() {
 
-        assertEquals(560.0, Questions.netbill(450.0));
+        assertEquals(0.0, Questions.netbill(0.0),delta1);
+        assertEquals(0.0, Questions.netbill(-10.0),delta1);
     }
     @Test
     public void test22() {
 
-        assertEquals(200, Questions.parcel(320));
+        assertEquals(0, Questions.parcel(0));
+        assertEquals(0, Questions.parcel(-10));
+
     }
     @Test
     public void test23()
     {
-        assertEquals("oa", Questions.vowels("programming", 2));
+        assertEquals("invalid", Questions.vowels("programming", 4));
+        assertEquals("invalid", Questions.vowels("", 4));
+        assertEquals("invalid", Questions.vowels("programming", 0));
+        assertEquals("invalid", Questions.vowels("programming", -1));
     }
     @Test
     public void test24()
     {
-        assertEquals('h', Questions.maxfreq("hackathon"));
+        assertEquals('0', Questions.maxfreq(""));
+        assertEquals('0', Questions.maxfreq("1234"));
     }
     @Test
     public void test25() {
 
-        assertEquals(8, Questions.lastindex("0010010010"));
+        assertEquals(0, Questions.lastindex("002002102010"));
+        assertEquals(0, Questions.lastindex("0000"));
+        assertEquals(0, Questions.lastindex("1111"));
+        assertEquals(0, Questions.lastindex("abcd"));
     }
     @Test
     public void test26() {
-        assertEquals("---", Questions.dashes(3));
+        assertEquals("invalid", Questions.dashes(0));
+        assertEquals("invalid", Questions.dashes(-1));
     }
     @Test
     public void test27() {
-        String[] a = {"ABC", "ACB", "BAC", "BCA","CBA", "CAB"};
-        assertEquals(a, Questions.permutations("ABC"));
+        String[] a = {"invalid"};
+        assertArrayEquals(a, Questions.permutations(""));
     }
     @Test
     public void test28() {
 
-        assertEquals('l', Questions.repeat("legolas"));
+        assertEquals('0', Questions.repeat("abcd"));
     }
     @Test
     public void test29() {
 
-        assertEquals(3, Questions.singledigit(147));
+        assertEquals(0, Questions.singledigit(0));
     }
     @Test
     public void test30()
     {
-        assertEquals(true, Questions.happy(203));
+        assertEquals(false, Questions.happy(0));
+        assertEquals(false, Questions.happy(-50));
     }
     @Test
     public void test31()
     {
-        assertEquals(3702, Questions.series2(4));
+        assertEquals(0, Questions.series2(0));
+        assertEquals(0, Questions.series2(-10));
     }
     @Test
     public void test32() {
-        int[] a  = {1,2,4,6,3,7,8};
-        assertEquals(5, Questions.missingnum(a));
+        int[] a  = {};
+        assertEquals(0, Questions.missingnum(a,0 ));
+        int[] b = {1, 2, 12,4,13,5};
+        assertEquals(0, Questions.missingnum(b,7 ));
     }
     @Test
     public void test33()
     {
-        assertEquals(true, Questions.apocalyptic(109));
+        assertEquals(false, Questions.apocalyptic(0));
     }
     @Test
     public void test34()
     {
-        int[] a  = {-1,2,-4,6,-3,7,-8};
-        assertEquals(5, Questions.alternate(a));
+        int[] a  = {};
+        assertEquals(0, Questions.alternate(a, 0));
+        assertEquals(0, Questions.alternate(a, -1));
     }
     @Test
     public void test35() {
-        int[] a  = {1,3,5,9,11,80,15,33,37,41};
-        assertEquals(true, Questions.sorting(a));
+        int[] a  = {};
+        assertEquals(false, Questions.sorting(a, 0));
+        assertEquals(false, Questions.sorting(a, -1));
     }
     @Test
     public void test36() {
-        assertEquals("50lpp48aca", Questions.encrypt("apple"));
+        assertEquals("invalid", Questions.encrypt(""));
+        assertEquals("invalid", Questions.encrypt("1234"));
     }
     @Test
     public void test37() {
-        int[][] m  = {{2,0},{0,4}};
-        assertEquals(true, Questions.diagonalmatrix(m));
+        int[][] m  = {};
+        assertEquals(false, Questions.diagonalmatrix(m, 0));
     }
     @Test
     public void test38() {
-        assertEquals(true, Questions.armstrong(153));
+        assertEquals(false, Questions.armstrong(0));
     }
     @Test
     public void test39() {
-        assertEquals(5, Questions.kempner(5));
+        assertEquals(0, Questions.kempner(0));
     }
-    @Test
-    public void test40() {
-        int[] a = {1,2,4,6,5,8,10,3};
-        assertEquals(true, Questions.positive(a));
-    }
+
     @Test
     public void test41() {
-        assertEquals(true, Questions.ascending(114455777));
+        assertEquals(false, Questions.ascending(0));
     }
     @Test
     public void test42() {
-        assertEquals(true, Questions.descending(998887755));
+        assertEquals(false, Questions.descending(0));
     }
     @Test
     public void test43() {
-        String[] a = {"Delhi", "Bangalore", "Agra", "Mumbai"};
-        String[] b = {"Agra", "Bangalore", "Delhi", "Mumbai"};
-        assertEquals(b, Questions.alphasort(a));
+        String[] a = {};
+        String[] b = {"invalid"};
+        assertArrayEquals(b, Questions.alphasort(a));
     }
     @Test
     public void test44() {
-        assertEquals(4, Questions.doubleletter("She was feeding the little rabbit with an apple"));
+        assertEquals(0, Questions.doubleletter(""));
+        assertEquals(0, Questions.doubleletter("1234"));
     }
     @Test
     public void test45() {
-        assertEquals("avehay", Questions.piglatin("have"));
+        assertEquals("invalid", Questions.piglatin(""));
+        assertEquals("invalid", Questions.piglatin("1234"));
     }
     @Test
     public void test46() {
-        assertEquals(true, Questions.semiprime(49));
+        assertEquals(false, Questions.semiprime(0));
     }
     @Test
     public void test47() {
-        assertEquals(true, Questions.balanced(5));
+        assertEquals(false, Questions.balanced(0));
     }
     @Test
     public void test48() {
-        int[][] a = {{1,2,3,4}, {4,3,2,1}, {7,8,9,6}, {6,5,4,3}};
-        assertEquals(36, Questions.diagonals(a));
+        int[][] a = {};
+        assertEquals(0, Questions.diagonals(a, 0));
+        assertEquals(0, Questions.diagonals(a, -1));
     }
     @Test
     public void test49() {
-        assertEquals("gnimmargorP ssalC", Questions.reverse("Programming Class"));
+        assertEquals("invalid", Questions.reverse(""));
     }
     @Test
     public void test50() {
-        int[] a = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55};
-        assertEquals(a, Questions.triangular(10));
+        int[] a = {0};
+        assertEquals(a, Questions.triangular(0));
+        assertEquals(a, Questions.triangular(-10));
     }
 }

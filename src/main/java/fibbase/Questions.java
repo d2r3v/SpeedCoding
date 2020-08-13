@@ -70,7 +70,7 @@ public static boolean special(int n)
 {
 	return false;
 }
-public static boolean equalarr(int[] a, int[] b)
+public static boolean equalarr(int[] a, int[] b, int n, int m)
 {
 	return false;
 }
@@ -92,7 +92,7 @@ public static String arrtostr(char[] a)
 	String m = "";
 	return m;
 }
-public static boolean specialarr(int[] a)
+public static boolean specialarr(int[] a, int n)
 {
 	return false;
 }
@@ -159,7 +159,7 @@ public static int series2(int n)
 	int a = 0;
 	return a;
 }
-public static int missingnum(int[] n)
+public static int missingnum(int[] n, int m)
 {
 	int a = 0;
 	return a;
@@ -168,12 +168,12 @@ public static boolean apocalyptic(int n)
 {
 	return false;
 }
-public static int alternate(int[] n)
+public static int alternate(int[] n, int m)
 {
 	int a = 0;
 	return a;
 }
-public static boolean sorting(int[] n)
+public static boolean sorting(int[] n, int m)
 {
 	return false;
 }
@@ -182,7 +182,7 @@ public static String encrypt(String n)
 	String a = "";
 	return a;
 }
-public static boolean diagonalmatrix(int[][] n)
+public static boolean diagonalmatrix(int[][] n, int m)
 {
 	return false;
 }
@@ -235,7 +235,7 @@ public static boolean even(int[] n)
 {
 	return false;
 }
-public static int diagonals(int[][] n)
+public static int diagonals(int[][] n, int m)
 {
 	int a = 0;
 	return a;

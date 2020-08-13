@@ -68,7 +68,7 @@ public class QuestionsTest {
 	public void test13() {
 		int[] a = {51,42,23,74};
 		int[] b = {51,42,23,74};
-		assertEquals(true, Questions.equalarr(a,b));
+		assertEquals(true, Questions.equalarr(a,b, 4, 4));
 	}
 	@Test
 	public void test14() {
@@ -91,8 +91,8 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test18() {
-		int[] a = {4,5,8,11,14,25,18};
-		assertEquals(true, Questions.specialarr(a));
+		int[] a = {2,3,4,5,8,3,10};
+		assertEquals(true, Questions.specialarr(a,7 ));
 	}
 	@Test
 	public void test19() {
@@ -105,7 +105,7 @@ public class QuestionsTest {
 	@Test
 	public void test21() {
 
-		assertEquals(560.0, Questions.netbill(450.0));
+		assertEquals(560.0, Questions.netbill(450.0), 0.00001);
 	}
 	@Test
 	public void test22() {
@@ -159,7 +159,7 @@ public class QuestionsTest {
 	@Test
 	public void test32() {
 		int[] a  = {1,2,4,6,3,7,8};
-		assertEquals(5, Questions.missingnum(a));
+		assertEquals(5, Questions.missingnum(a, 8));
 	}
 	@Test
 	public void test33()
@@ -170,12 +170,12 @@ public class QuestionsTest {
 	public void test34()
 	{
 		int[] a  = {-1,2,-4,6,-3,7,-8};
-		assertEquals(5, Questions.alternate(a));
+		assertEquals(5, Questions.alternate(a,7 ));
 	}
 	@Test
 	public void test35() {
 		int[] a  = {1,3,5,9,11,80,15,33,37,41};
-		assertEquals(true, Questions.sorting(a));
+		assertEquals(true, Questions.sorting(a, 10));
 	}
 	@Test
 	public void test36() {
@@ -184,7 +184,7 @@ public class QuestionsTest {
 	@Test
 	public void test37() {
 		int[][] m  = {{2,0},{0,4}};
-		assertEquals(true, Questions.diagonalmatrix(m));
+		assertEquals(true, Questions.diagonalmatrix(m, 2));
 	}
 	@Test
 	public void test38() {
@@ -238,7 +238,7 @@ public class QuestionsTest {
 	@Test
 	public void test49() {
 		int[][] a = {{1,2,3,4}, {4,3,2,1}, {7,8,9,6}, {6,5,4,3}};
-		assertEquals(36, Questions.diagonals(a));
+		assertEquals(36, Questions.diagonals(a, 4));
 	}
 	@Test
 	public void test50() {
