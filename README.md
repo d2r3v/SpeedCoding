@@ -18,7 +18,8 @@ Given a string, we need to check whether it is possible to make the string a pal
 ```java
 @Test
 public void test1() {
-	assertEquals(true, FibBase.almostPalindrome("abcba"));
+	assertEquals(1, FibBase.almostPalindrome("abcba"));
+	assertEquals(0, FibBase.almostPalindrome("abcde"));
 }
 ```
 ## Question 2: Multiplying Strings
@@ -32,7 +33,8 @@ Given two numbers as strings.The task is to find product of these two numbers.
 ```java
 @Test
 public void test2() {
-	assertEquals(10000, FibBase.MultiplyStrings(500,20));
+	assertEquals(10000, FibBase.MultiplyStrings("500","20"));
+	assertEquals(120, FibBase.MultiplyStrings("6","20"));
 }
 ```
 ## Question 3: Super Palindrome
@@ -48,8 +50,11 @@ A super palindrome number is a palindrome number whose square is also a palindro
 @Test
 public void test3() {
 	int[] a1= {1,2,7,3,11,123,320,32,45,78};
-	int[] a= {4,9,121};
+	int[] a= {2,3,11};
 	assertEquals(a, FibBase.SuperPalindrome(a1));
+	int[] b1= {1,22,7,3,15,13,30,37,45,78};
+	int[] b= {22,3};
+    assertEquals(b, FibBase.SuperPalindrome(b1));
 }
 ```
 ## Question 4: Prime backwards and forwards
@@ -63,7 +68,8 @@ Given an integer, check whether that int forms a prime number forwards and backw
 ```java
 @Test
 public void test4() {
-	assertEquals(true, FibBase.trueorfalse(17));
+	assertEquals(1, FibBase.trueorfalse(17));
+	assertEquals(0, FibBase.trueorfalse(43));
 }
 ```
 ## Question 5: Finding the GCD
@@ -78,13 +84,14 @@ Given two integers, return their greatest common divisor.
 @Test
 public void test5() {
 	assertEquals(3, FibBase.findgcd(24,27));
+	assertEquals(1, FibBase.findgcd(25,27));
 }
 ```
 ## Question 6: Average number of letters and sentences per 100 words
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given a string, return the average number of letters per 100 words and the average number of sentences per 100 words.
+Given a string, return the average number of letters per 100 words, and the average number of sentences per 100 words (as integers).
 
 ### Test Cases
 
@@ -93,6 +100,8 @@ Given a string, return the average number of letters per 100 words and the avera
 public void test6() {
 	int[] a = {464,28};
 	assertEquals(a, FibBase.averagestring("Congratulations! Today is your day. You're off to Great Places! You're off and away!"));
+	int[] b = {537,4.20};
+	assertEquals(b, FibBase.averagestring("Existing computer programs that measure readability are based largely upon subroutines which estimate number of syllables, usually by counting vowels. The shortcoming in estimating syllables is that it necessitates keypunching the prose into the computer. There is no need to estimate syllables since word length in letters is a better predictor of readability than word length in syllables. Therefore, a new readability formula was computed that has for its predictors letters per 100 words and sentences per 100 words. Both predictors can be counted by an optical scanning device, and thus the formula makes it economically feasible for an organization such as the U.S. Office of Education to calibrate the readability of all textbooks for the public school system."));
 }
 ```
 ## Question 7: The potential of a word
@@ -107,6 +116,7 @@ Given a sentence, arrange the words in ascending order according to their potent
 @Test
 public void test7() {
 	assertEquals("YOU LEAP LOOK BEFORE", FibBase.potential("LOOK BEFORE YOU LEAP"));
+	assertEquals("TO THE WELCOME HACKATHON", FibBase.potential("WELCOME TO THE HACKATHON"));
 }
 ```
 ## Question 8: Returning a series
@@ -122,13 +132,15 @@ Return the series 0, 3, 8, 15.. Till n terms
 public void test8() {
 	int[] a = {0, 3, 8, 15, 24, 35,48,63};
 	assertEquals(a, FibBase.series(8));
+	int[] b = {0, 3, 8, 15, 24};
+	assertEquals(b, FibBase.series(5));
 }
 ```
 ## Question 9: A valid filename
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Determine whether a given string is a valid filename with an extension and if yes, return the correct extension.
+Determine whether a given string is a valid filename with an extension and if yes, return the correct extension. If not, return "Not a file name"
 
 ### Test Cases
 
@@ -136,6 +148,7 @@ Determine whether a given string is a valid filename with an extension and if ye
 @Test
 public void test9() {
 	assertEquals(".py", FibBase.filename("hackathon.py"));
+	assertEquals("Not a file name", FibBase.filename("speedcoding"));
 }
 ```
 ## Question 10: Disarium numbers
@@ -150,7 +163,8 @@ Note: A number will be called DISARIUM if the sum of its digits powered with the
 ```java
 @Test
 public void test10() {
-	assertEquals(true, FibBase.disarium(135));
+	assertEquals(1, FibBase.disarium(135));
+	assertEquals(0, FibBase.disarium(25));
 }
 ```
 ## Question 11: Special numbers
@@ -165,7 +179,8 @@ A special number is one that equals the sum of the factorials of its digits. For
 ```java
 @Test
 public void test11() {
-	assertEquals(true, FibBase.special(145));
+	assertEquals(1, FibBase.special(145));
+	assertEquals(0, FibBase.special(25));
 }
 ```
 ## Question 12: Equal arrays
@@ -181,7 +196,10 @@ Determine whether two integer arrays are equal or not.
 public void test12() {
 	int[] a = {43,23,56,54,21,29};
 	int[] b = {43,23,56,54,21,29};
-	assertEquals(true, FibBase.equalarr(a,b));
+	assertEquals(1, FibBase.equalarr(a,b, 6, 6));
+	int[] c = {4,3,6,4,1,9};
+	int[] d = {4,3,56,54,21,22};
+	assertEquals(0, FibBase.equalarr(c,d, 6, 6));
 }
 ```
 ## Question 13: Prime factors
@@ -197,6 +215,8 @@ Given an integer, return its prime factorisation.
 public void test13() {
 	int[] a = {2,2,2,3,3};
 	assertEquals(a, FibBase.prime(72));
+	int[] b = {2,2,2,3,3,5};
+	assertEquals(b, FibBase.prime(360));
 }
 ```
 ## Question 14: Automorphic numbers
@@ -211,7 +231,8 @@ An automorphic number is a number whose square "ends" in the same digits as the 
 ```java
 @Test
 public void test14() {
-	assertEquals(true, FibBase.automorphic(6));
+	assertEquals(1, FibBase.automorphic(6));
+	assertEquals(0, FibBase.automorphic(26));
 }
 ```
 ## Question 15: Alphabetical order
@@ -225,7 +246,8 @@ Given a string, check whether the characters are in alphabetical order.
 ```java
 @Test
 public void test15() {
-	assertEquals(true, FibBase.alphabetical("aeghjm"));
+	assertEquals(1, FibBase.alphabetical("aeghjm"));
+	assertEquals(0, FibBase.alphabetical("hack"));
 }
 ```
 ## Question 16: Array to string
@@ -240,14 +262,16 @@ Given a character array, convert the array into a string and return it.
 @Test
 public void test16() {
 	char[] a = {'h', 'a', 'c', 'k', 'a', 't', 'h', 'o', 'n'};
-	assertEquals("[h, a, c, k, a, t, h, o, n]", FibBase.arrtostr(a));
+	assertEquals("[h, a, c, k, a, t, h, o, n]", FibBase.arrtostr(a,9));
+	char[] b = {'p', 'r', 'o', 'g', 'r', 'a', 'm'};
+	assertEquals("[p, r, o, g, r, a, m]", FibBase.arrtostr(b,7));
 }
 ```
 ## Question 17: Special array
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given an integer array, determine whether it is a special array or not.
+Given an integer array, determine whether it is a special array or not. Return 1 if true and 0 if false. 
 An array is special, if every even index contains an even number and every odd index contains an odd number.
 
 ### Test Cases
@@ -256,7 +280,9 @@ An array is special, if every even index contains an even number and every odd i
 @Test
 public void test17() {
 	int[] a = {6,3,4,9,2,5,12};
-	assertEquals(true, FibBase.specialarr(a));
+	assertEquals(1, FibBase.specialarr(a, 7));
+	int[] b = {3,32,47,92,21,5,12};
+	assertEquals(1, FibBase.specialarr(b, 7));
 }
 ```
 ## Question 18: Returning the nth term
@@ -272,6 +298,7 @@ Return the nth term in the series:
 @Test
 public void test18() {
 	assertEquals(255, FibBase.series1(7));
+	assertEquals(31, FibBase.series1(4));
 }
 ```
 ## Question 19: Anagrams
@@ -285,7 +312,8 @@ Determine whether two given strings are anagrams or not.
 ```java
 @Test
 public void test19() {
-	assertEquals(true, FibBase.anagram("triangle", "integral"));
+	assertEquals(1, FibBase.anagram("triangle", "integral"));
+	assertEquals(0, FibBase.anagram("joy", "enjoy"));
 }
 ```
 ## Question 20: Calculating the net bill
@@ -308,7 +336,8 @@ Above 300 ----- Rs 1
 ```java
 @Test
 public void test20() {
-	assertEquals(640.0, FibBase.netbill(530));
+	assertEquals(640.0, FibBase.netbill(530.0));
+	assertEquals(480.0, FibBase.netbill(370.0));
 }
 ```
 ## Question 21: Courier service rates
@@ -319,7 +348,7 @@ A courier service provides a speed service for any letter/parcel to Mumbai which
 
 Up to 100 grams:                               	        	= Rs. 80/-
 
-For each additional 100 gram or part thereof    		= Rs. 40/-
+For each additional 100 grams or part thereof    		= Rs. 40/-
 
 Return the net bill to be paid.
 
@@ -329,13 +358,14 @@ Return the net bill to be paid.
 @Test
 public void test21() {
 	assertEquals(280, FibBase.parcel(520));
+	assertEquals(240, FibBase.parcel(450));
 }
 ```
 ## Question 22: Finding vowels
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Return the first n vowels in a given string.
+Return the first n vowels in a given string. If there are no vowels, return '0'.
 
 ### Test Cases
 
@@ -343,6 +373,7 @@ Return the first n vowels in a given string.
 @Test
 public void test22() {
 	assertEquals("aao", FibBase.vowels("hackathon", 3));
+	assertEquals("0", FibBase.vowels("dcghfr", 4));
 }
 ```
 ## Question 23: Maximum frequency of a character
@@ -357,6 +388,7 @@ Given a string, return the first character with maximum frequency.
 @Test
 public void test23() {
 	assertEquals('t', FibBase.maxfreq("tests"));
+	assertEquals('a', FibBase.maxfreq("adddeaa"));
 }
 ```
 ## Question 24: Finding the last index
@@ -371,6 +403,7 @@ Given a string consisting only '0's and '1's,  return the last index of the '1' 
 @Test
 public void test24() {
 	assertEquals(7, FibBase.lastindex("010010010"));
+	assertEquals(8, FibBase.lastindex("1000100100"));
 }
 ```
 ## Question 25: Number to dashes
@@ -385,6 +418,7 @@ Convert the given integer into a string of dashes of that number and return the 
 @Test
 public void test25() {
 	assertEquals("-----", FibBase.dashes(5));
+	assertEquals("--", FibBase.dashes(2));
 }
 ```
 ## Question 26: Finding permutations
@@ -392,6 +426,7 @@ public void test25() {
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
 Given a string, return all of its possible permutations.
+Note: The permutations should not be repeated.
 
 ### Test Cases
 
@@ -400,6 +435,8 @@ Given a string, return all of its possible permutations.
 public void test26() {
 	String[] a = {"cde", "ced", "dce", "dec", "ecd", "edc"};
 	assertEquals(a, FibBase.permutations("cde"));
+	String[] b = {"HACK", "AHCK", "CHAK", "HCAK", "ACHK", "CAHK", "KAHC", "AKHC", "HKAC", "KHAC", "AHKC", "HAKC", "HCKA", "CHKA", "KHCA", "HKCA", "CKHA", "KCHA", "KCAH", "CKAH", "AKCH", "KACH", "CAKH", "ACKH"};
+	assertEquals(b, FibBase.permutations("HACK"));
 }
 ```
 ## Question 27: First repeating character
@@ -414,6 +451,7 @@ Given a string, return the first character that repeats.
 @Test
 public void test27() {
 	assertEquals('a', FibBase.repeat("gandalf"));
+	assertEquals('d', FibBase.repeat("dcefdcef"));
 }
 ```
 ## Question 28: Converting to a single digit
@@ -428,6 +466,7 @@ Given an integer, find the sum of the digits of the number until it becomes a si
 @Test
 public void test28() {
 	assertEquals(1, FibBase.singledigit(1234));
+	assertEquals(4, FibBase.singledigit(5674));
 }
 ```
 ## Question 29: Happy numbers
@@ -442,7 +481,8 @@ A happy number is one in which the number which eventually reaches 1 when replac
 ```java
 @Test
 public void test29() {
-	assertEquals(true, FibBase.happy(19));
+	assertEquals(1, FibBase.happy(19));
+	assertEquals(0, FibBase.happy(98));
 }
 ```
 ## Question 30: Sum of series
@@ -459,6 +499,7 @@ __
 @Test
 public void test30() {
 	assertEquals(37035, FibBase.series2(5));
+	assertEquals(369, FibBase.series2(3));
 }
 ```
 
@@ -476,6 +517,8 @@ Note: There are no duplicates in the list. The array may be unsorted.
 public void test31() {
 	int[] a = {1, 2, 3, 5};
 	assertEquals(4, FibBase.missingnum(a,5));
+	int[] b = {1, 2, 4, 5, 6};
+	assertEquals(3, FibBase.missingnum(b,6));
 }
 ```
 ## Question 32: Apocalyptic number
@@ -490,14 +533,15 @@ A number n is apocalyptic if 2^n contains a string of 3 consecutive 6s.
 ```java
 @Test
 public void test32() {
-	assertEquals(true, FibBase.apocalyptic(192));
+	assertEquals(1, FibBase.apocalyptic(192));
+	assertEquals(0, FibBase.apocalyptic(156));
 }
 ```
 ## Question 33: Alternating positions
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given an array, determine whether the the elements at alternate positions are positive and negative, respectively.
+Given an array, determine whether the elements at alternate positions are positive and negative, respectively.
 
 ### Test Cases
 
@@ -505,14 +549,16 @@ Given an array, determine whether the the elements at alternate positions are po
 @Test
 public void test33() {
 	int[] a = {-10,11,-16,13,-12,15,-17,18,-19};
-	assertEquals(true, FibBase.alternate(a, 9));
+	assertEquals(1, FibBase.alternate(a, 9));
+	int[] b = {-1,-12,16,-23,-12,-15,-17,18,-19};
+	assertEquals(0, FibBase.alternate(b, 9));
 }
 ```
 ## Question 34: Almost-sorted array
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given an array, determine whether the it is an almost sorted array.
+Given an array, determine whether it is an almost sorted array.
 An almost-sorted sequence is a sequence that is strictly increasing if you remove a single element from the array (no more, no less).
 
 ### Test Cases
@@ -521,17 +567,19 @@ An almost-sorted sequence is a sequence that is strictly increasing if you remov
 @Test
 public void test34() {
 	int[] a = {2,5,7,8,3,10,13,14};
-	assertEquals(true, FibBase.sorting(a, 8));
+	assertEquals(1, FibBase.sorting(a, 8));
+	int[] a = {2,15,71,82,3,10,13,114};
+	assertEquals(1, FibBase.sorting(a, 8));
 }
 ```
-## Question 35: Encryption
+## Question 35: Hashing
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
 Given a word, return its changed form according to the following steps:
 Reverse the word 
 Replace each vowel with its ASCII value, do integer division and divide it by two. 
-Add “aca” to the end of the word 
+Add “aca” to the end of the word.
 
 ### Test Cases
 
@@ -539,6 +587,7 @@ Add “aca” to the end of the word
 @Test
 public void test35() {
 	assertEquals("50d55caca", FibBase.sorting("code"));
+	assertEquals("SP3939Laca", FibBase.sorting("LOOPS"));
 }
 ```
 ## Question 36: Diagonal matrix
@@ -554,7 +603,9 @@ A matrix is said to be diagonal if all elements M[i][j] with i different from j 
 @Test
 public void test36() {
 	int[][] a = {{4,0},{0,3}};
-	assertEquals(true, FibBase.diagonalmatrix(a));
+	assertEquals(1, FibBase.diagonalmatrix(a, 2));
+	int[][] b = {{1,0,1},{3,8,0},{0,0,4}};
+	assertEquals(0, FibBase.diagonalmatrix(b, 3));
 }
 ```
 ## Question 37: Armstrong numbers
@@ -569,7 +620,8 @@ An armstrong number is one that is equal to the sum of cubes of its digits.
 ```java
 @Test
 public void test37() {
-	assertEquals(true, FibBase.armstrong(1634));
+	assertEquals(1, FibBase.armstrong(1634));
+	assertEquals(0, FibBase.armstrong(120));
 }
 ```
 ## Question 38: Kempner numbers
@@ -585,6 +637,7 @@ A kempner number for a particular number n may be defined as the smallest number
 @Test
 public void test38() {
 	assertEquals(5, FibBase.kempner(10));
+	assertEquals(2, FibBase.kempner(2));
 }
 ```
 ## Question 39: Rearrange letters
@@ -601,6 +654,9 @@ public void test39() {
 	char[] a = {'e', 'c', 'o', 'd'};
 	int[] b = {3,0,1,2};
 	assertEquals("code", FibBase.rearrange(a,b));
+	char[] c = {'c', 'h', 'a', 'k'};
+	int[] d = {2,0,1,3};
+	assertEquals("hack", FibBase.rearrange(c,d));
 }
 ```
 ## Question 40: Ascending and repeating digits
@@ -614,7 +670,8 @@ Determine whether a given number’s digits are in ascending order and if they a
 ```java
 @Test
 public void test40() {
-	assertEquals(true, FibBase.ascending(113335566));
+	assertEquals(1, FibBase.ascending(113335566));
+	assertEquals(0, FibBase.ascending(13247775));
 }
 ```
 ## Question 41: Descending and repeating digits
@@ -628,7 +685,8 @@ Determine whether a given number’s digits are in descending order and if they 
 ```java
 @Test
 public void test41() {
-	assertEquals(true, FibBase.descending(77443322111));
+	assertEquals(1, FibBase.descending(77443322111));
+	assertEquals(0, FibBase.descending(785433166));
 }
 ```
 ## Question 42: Alphabetical order
@@ -645,6 +703,9 @@ public void test42() {
 	String[] a = {"hackathon", "coding", "programming" ,"files"};
 	String[] b = {"coding", "files", "hackathon", "programming"};
 	assertEquals(b, FibBase.alphasort(a));
+	String[] c = {"Welcome", "to", "the" ,"hackathon"};
+	String[] d = {"hackathon", "the", "to", "Welcome"};
+	assertEquals(d, FibBase.alphasort(c));
 }
 ```
 ## Question 43: Double letters
@@ -659,6 +720,7 @@ Given a string, return the number of double letter sequences that exist in the s
 @Test
 public void test43() {
 	assertEquals(2, FibBase.sorting("She needs the door to be opened"));
+	assertEquals(1, FibBase.sorting("Speed coding"));
 }
 ```
 ## Question 44: Pig latin
@@ -675,6 +737,7 @@ If a word starts with a vowel add "yay" to the end of the word.
 @Test
 public void test44() {
 	assertEquals("ateyay", FibBase.piglatin("ate"));
+	assertEquals("ogrammingpray", FibBase.piglatin("programming"));
 }
 ```
 ## Question 45: Semi prime numbers
@@ -689,7 +752,8 @@ A semiprime is a composite number that is the product of two primes. Apart from 
 ```java
 @Test
 public void test45() {
-	assertEquals(true, FibBase.semiprime(15));
+	assertEquals(1, FibBase.semiprime(15));
+	assertEquals(0, FibBase.semiprime(48));
 }
 ```
 ## Question 46: Primal strength
@@ -704,7 +768,8 @@ A prime number is balanced if it is equidistant from the prime before it and the
 ```java
 @Test
 public void test46() {
-	assertEquals(true, FibBase.balanced(53));
+	assertEquals(1, FibBase.balanced(53));
+	assertEquals(0, FibBase.balanced(17));
 }
 ```
 
@@ -720,14 +785,16 @@ Determine whether an array contains more even numbers than odd.
 @Test
 public void test47() {
 	int[] a = {1, 2, 4, 6, 8, 14, 18, 3};
-	assertEquals(true, FibBase.even(15));
+	assertEquals(1, FibBase.even(a,8));
+	int[] b = {1, 21, 43, 61, 8, 14, 189, 3};
+	assertEquals(0, FibBase.even(b,8));
 }
 ```
 ## Question 48: Sum of diagonals
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
 
-Given a matrix, return the sum of the primary and secondary diagonal.
+Given an n*n matrix, return the sum of the primary and secondary diagonal.
 
 ### Test Cases
 
@@ -735,7 +802,9 @@ Given a matrix, return the sum of the primary and secondary diagonal.
 @Test
 public void test48() {
 	int[][] a = {{1,3,5},{7,9,8},{6,4,2}};
-	assertEquals(32, FibBase.diagonals(a));
+	assertEquals(32, FibBase.diagonals(a,3));
+	int[][] b = {{1,4,0},{8,15,3},{1,9,2}};
+	assertEquals(34, FibBase.diagonals(b,3));
 }
 ```
 # Question 49: Reversing a string
@@ -750,6 +819,8 @@ Given a string, reverse each word and return the new formed string.
 @Test
 public void test49() {
 	assertEquals("sredoc ,olleh", FibBase.reverse("hello, coders"));
+	assertEquals("nohtakcah eht ot emocleW", FibBase.reverse("Welcome to the hackathon"));
+    
 }
 ```
 # Question 50: Triangular number sequence.
@@ -766,5 +837,7 @@ A triangular number is a figurative number that can be represented in the form o
 public void test50() {
 	int[] a = {1, 3, 6, 10, 15};
 	assertEquals(a, FibBase.triangular(5));
+	int[] b = {0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190};
+	assertEquals(b, FibBase.triangular(19));
 }
 ```
