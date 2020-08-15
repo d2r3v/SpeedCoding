@@ -6,6 +6,7 @@ Speed Coding
 
 + You have 60 minutes (1h) to complete the assigned tasks.
 + Take your time to read the question.
++ For questions that have a true/false answer, return 1 for true and 0 for false.
 
 ## Question 1: Almost Palindrome
 
