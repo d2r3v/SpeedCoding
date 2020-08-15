@@ -302,8 +302,8 @@ public class QuestionsTest {
 	public void test48() {
 		int[] a = {20, 22, 24, 3, 26, 2, 1};
 		assertEquals(1, Questions.even(a, 7));
-		int[] a = {21, 23, 27, 3, 29, 2, 1};
-		assertEquals(0, Questions.even(a, 7));
+		int[] b = {21, 23, 27, 3, 29, 2, 1};
+		assertEquals(0, Questions.even(b, 7));
 	}
 	@Test
 	public void test49() {
