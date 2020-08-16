@@ -89,7 +89,7 @@ public static int alphabetical(String n)
 }
 public static String arrtostr(char[] a, int n)
 {
-	String m = "";
+	String m = " ";
 	return m;
 }
 public static int specialarr(int[] a, int n)
