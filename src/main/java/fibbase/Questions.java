@@ -8,14 +8,14 @@ public class Questions {
 
 public static int Divide(int m, int n)
 {
-	int  x = m/n;
+	int  x=m/n;
 	return x;
 }
 
-public static int almostPalindrome(String str)
+public static boolean almostPalindrome(String str)
 {
 
-	return 2;
+	return false;
 }
 public static int MultiplyStrings(String num1,String num2)
 {	
@@ -32,10 +32,10 @@ public static int m(int n,int m )
 
 	return n;
 } 
-public   static int trueorfalse(int n)
+public   static boolean trueorfalse(int n)
 {
 
-    return 2;
+    return false;
 }
 public   static int findgcd(int n, int m)
 {
@@ -62,48 +62,48 @@ public static String filename(String n)
 	String m = "";
 	return m;
 }
-public static int disarium(int n)
+public static boolean disarium(int n)
 {
-	return 2;
+	return false;
 }
-public static int special(int n)
+public static boolean special(int n)
 {
-	return 2;
+	return false;
 }
-public static int equalarr(int[] a, int[] b, int n, int m)
+public static boolean equalarr(int[] a, int[] b, int n, int m)
 {
-	return 2;
+	return false;
 }
 public static int[] prime(int n)
 {
 	int[] a = {};
 	return a;
 }
-public static int automorphic(int n)
+public static boolean automorphic(int n)
 {
-	return 2;
+	return false;
 }
-public static int alphabetical(String n)
+public static boolean alphabetical(String n)
 {
-	return 2;
+	return false;
 }
-public static String arrtostr(char[] a, int n)
+public static String arrtostr(char[] a,int n)
 {
 	String m = " ";
 	return m;
 }
-public static int specialarr(int[] a, int n)
+public static boolean specialarr(int[] a, int n)
 {
-	return 2;
+	return false;
 }
 public static int series1(int n)
 {
 	int a  = 0;
 	return a;
 }
-public static int anagram(String n, String m)
+public static boolean anagram(String n, String m)
 {
-	return 2;
+	return false;
 }
 public static double netbill(double n)
 {
@@ -150,9 +150,9 @@ public static int singledigit(int n)
 	int a = 0;
 	return a;
 }
-public static int happy(int n)
+public static boolean happy(int n)
 {
-	return 2;
+	return false;
 }
 public static int series2(int n)
 {
@@ -164,31 +164,31 @@ public static int missingnum(int[] n, int m)
 	int a = 0;
 	return a;
 }
-public static int apocalyptic(int n)
+public static boolean apocalyptic(int n)
 {
-	return 2;
+	return false;
 }
 public static int alternate(int[] n, int m)
 {
 	int a = 0;
 	return a;
 }
-public static int sorting(int[] n, int m)
+public static boolean sorting(int[] n, int m)
 {
-	return 2;
+	return false;
 }
 public static String encrypt(String n)
 {
 	String a = "";
 	return a;
 }
-public static int diagonalmatrix(int[][] n, int m)
+public static boolean diagonalmatrix(int[][] n, int m)
 {
-	return 2;
+	return false;
 }
-public static int armstrong(int n)
+public static boolean armstrong(int n)
 {
-	return 2;
+	return false;
 }
 public static int kempner(int n)
 {
@@ -200,13 +200,13 @@ public static String rearrange (char[] a, int[] n)
 	String str = "";
 	return str;
 }
-public static int ascending(int n)
+public static boolean ascending(int n)
 {
-	return 2;
+	return false;
 }
-public static int descending(int n)
+public static boolean descending(int n)
 {
-	return 2;
+	return false;
 }
 public static String[] alphasort(String[] n, int m)
 {
@@ -223,17 +223,17 @@ public static String piglatin(String n)
 	String a = "";
 	return a;
 }
-public static int semiprime(int n)
+public static boolean semiprime(int n)
 {
-	return 2;
+	return false;
 }
-public static int balanced(int n)
+public static boolean balanced(int n)
 {
-	return 2;
+	return false;
 }
-public static int even(int[] n, int m)
+public static boolean even(int[] n,int m)
 {
-	return 2;
+	return false;
 }
 public static int diagonals(int[][] n, int m)
 {
@@ -247,7 +247,7 @@ public static String reverse(String n)
 }
 public static int[] triangular(int n)
 {
-	int[] a = {};
+	int a[] = {};
 	return a;
 }
 }
