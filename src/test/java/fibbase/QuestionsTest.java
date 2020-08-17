@@ -230,8 +230,8 @@ public class QuestionsTest {
 	}
 	@Test
 	public void test36() {
-		assertEquals("50lpp48aca", Questions.encrypt("apple"));
-		assertEquals("GN36KC32Haca", Questions.encrypt("HACKING"));
+		assertEquals("50lpp48aca", Questions.hashing("apple"));
+		assertEquals("GN36KC32Haca", Questions.hashing("HACKING"));
 	}
 	@Test
 	public void test37() {
