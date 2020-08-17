@@ -195,7 +195,7 @@ public static int kempner(int n)
 	int a = 0;
 	return a;
 }
-public static String rearrange (char[] a, int[] n)
+public static String rearrange (char[] a, int[] n, int m)
 {
 	String str = "";
 	return str;
