@@ -177,7 +177,7 @@ public static boolean sorting(int[] n, int m)
 {
 	return false;
 }
-public static String encrypt(String n)
+public static String hashing(String n)
 {
 	String a = "";
 	return a;
