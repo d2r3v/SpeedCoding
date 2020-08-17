@@ -51,10 +51,10 @@ A super palindrome number is a palindrome number whose square is also a palindro
 @Test
 public void test3() {
 	int[] a1= {1,2,7,3,11,123,320,32,45,78};
-	int[] a= {2,3,11};
+	int[] a= {1,2,3,11};
 	assertEquals(a, FibBase.SuperPalindrome(a1));
 	int[] b1= {1,22,7,3,15,13,30,37,45,78};
-	int[] b= {22,3};
+	int[] b= {1,22,3};
     assertEquals(b, FibBase.SuperPalindrome(b1));
 }
 ```
@@ -283,7 +283,7 @@ public void test17() {
 	int[] a = {6,3,4,9,2,5,12};
 	assertEquals(1, FibBase.specialarr(a, 7));
 	int[] b = {3,32,47,92,21,5,12};
-	assertEquals(1, FibBase.specialarr(b, 7));
+	assertEquals(0, FibBase.specialarr(b, 7));
 }
 ```
 ## Question 18: Returning the nth term
@@ -404,7 +404,7 @@ Given a string consisting only '0's and '1's,  return the last index of the '1' 
 @Test
 public void test24() {
 	assertEquals(7, FibBase.lastindex("010010010"));
-	assertEquals(8, FibBase.lastindex("1000100100"));
+	assertEquals(8, FibBase.lastindex("10001000100"));
 }
 ```
 ## Question 25: Number to dashes
@@ -569,8 +569,8 @@ An almost-sorted sequence is a sequence that is strictly increasing if you remov
 public void test34() {
 	int[] a = {2,5,7,8,3,10,13,14};
 	assertEquals(1, FibBase.sorting(a, 8));
-	int[] a = {2,15,71,82,3,10,13,114};
-	assertEquals(1, FibBase.sorting(a, 8));
+	int[] b = {2,15,71,82,3,10,13,114};
+	assertEquals(0, FibBase.sorting(b, 8));
 }
 ```
 ## Question 35: Hashing
@@ -587,8 +587,8 @@ Add “aca” to the end of the word.
 ```java
 @Test
 public void test35() {
-	assertEquals("50d55caca", FibBase.sorting("code"));
-	assertEquals("SP3939Laca", FibBase.sorting("LOOPS"));
+	assertEquals("50d55caca", FibBase.hashing("code"));
+	assertEquals("SP3939Laca", FibBase.hashing("LOOPS"));
 }
 ```
 ## Question 36: Diagonal matrix
@@ -654,10 +654,10 @@ Given two arrays, one containing the scrambled word and the other containing the
 public void test39() {
 	char[] a = {'e', 'c', 'o', 'd'};
 	int[] b = {3,0,1,2};
-	assertEquals("code", FibBase.rearrange(a,b));
+	assertEquals("code", FibBase.rearrange(a,b, 4));
 	char[] c = {'c', 'h', 'a', 'k'};
 	int[] d = {2,0,1,3};
-	assertEquals("hack", FibBase.rearrange(c,d));
+	assertEquals("hack", FibBase.rearrange(c,d, 4));
 }
 ```
 ## Question 40: Ascending and repeating digits
@@ -838,7 +838,7 @@ A triangular number is a figurative number that can be represented in the form o
 public void test50() {
 	int[] a = {1, 3, 6, 10, 15};
 	assertEquals(a, FibBase.triangular(5));
-	int[] b = {0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190};
+	int[] b = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190};
 	assertEquals(b, FibBase.triangular(19));
 }
 ```
