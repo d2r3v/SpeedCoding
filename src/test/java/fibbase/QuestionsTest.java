@@ -9,7 +9,7 @@ public class QuestionsTest {
 	@Test
 	public void test1() {
 		assertEquals(1, Questions.Divide(1, 1));
-		assertEquals(250, Questions.Divide(5, 50));
+		assertEquals(10, Questions.Divide(50, 5));
 	}
 
 	@Test
@@ -65,7 +65,7 @@ public class QuestionsTest {
 		int[] a = {0, 3, 8, 15, 24, 35};
 		assertEquals(a, Questions.series(6));
 		int[] b = {0, 3, 8, 15, 24, 35,48,63,80};
-		assertEquals(b, Questions.series(8));
+		assertEquals(b, Questions.series(9));
 	}
 	@Test
 	public void test10() {
@@ -144,7 +144,7 @@ public class QuestionsTest {
 	public void test22() {
 
 		assertEquals(200, Questions.parcel(320));
-		assertEquals(200, Questions.parcel(320));
+		assertEquals(280, Questions.parcel(560));
 	}
 	@Test
 	public void test23()
@@ -162,7 +162,7 @@ public class QuestionsTest {
 	public void test25()
 	{
 		assertEquals(8, Questions.lastindex("0010010010"));
-		assertEquals(9, Questions.lastindex("100100001"));
+		assertEquals(9, Questions.lastindex("1001000001"));
 	}
 	@Test
 	public void test26() {
@@ -205,7 +205,7 @@ public class QuestionsTest {
 		int[] a  = {1,2,4,6,3,7,8};
 		assertEquals(5, Questions.missingnum(a, 8));
 		int[] b  = {1,2,3,4,5,7,8,9,10};
-		assertEquals(5, Questions.missingnum(b, 10));
+		assertEquals(6, Questions.missingnum(b, 10));
 	}
 	@Test
 	public void test33()
@@ -219,14 +219,14 @@ public class QuestionsTest {
 		int[] a  = {-1,2,-4,6,-3,7,-8};
 		assertEquals(1, Questions.alternate(a,7 ));
 		int[] b  = {1,2,-4,-6,3,-7,-8};
-		assertEquals(1, Questions.alternate(b,7 ));
+		assertEquals(0, Questions.alternate(b,7 ));
 	}
 	@Test
 	public void test35() {
 		int[] a  = {1,3,5,9,11,8,15,33,37,41};
 		assertEquals(1, Questions.sorting(a, 10));
 		int[] b  = {1,3,5,2,11,8,15,3,7,41};
-		assertEquals(1, Questions.sorting(b, 10));
+		assertEquals(0, Questions.sorting(b, 10));
 	}
 	@Test
 	public void test36() {
@@ -238,7 +238,7 @@ public class QuestionsTest {
 		int[][] a  = {{2,0},{0,4}};
 		assertEquals(1, Questions.diagonalmatrix(a, 2));
 		int[][] b  = {{3,1,0},{1,2,4}, {2,5,6}};
-		assertEquals(0, Questions.diagonalmatrix(b, 2));
+		assertEquals(0, Questions.diagonalmatrix(b, 3));
 	}
 	@Test
 	public void test38() {
@@ -254,10 +254,10 @@ public class QuestionsTest {
 	public void test40() {
 		char[] a = {'e', 't', 's', 't'};
 		int[] b = {1, 3, 2, 0};
-		assertEquals("test", Questions.rearrange(a,b));
+		assertEquals("test", Questions.rearrange(a,b, int n));
 		char[] c = {'A', 'O', 'R', 'P', 'R', 'M', 'G'};
 		int[] d = {5,2,4,0,1,6,3};
-		assertEquals("PROGRAM", Questions.rearrange(c,d));
+		assertEquals("PROGRAM", Questions.rearrange(c,d, int n));
 	}
 	@Test
 	public void test41() {
@@ -321,7 +321,7 @@ public class QuestionsTest {
 	public void test51() {
 		int[] a = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55};
 		assertEquals(a, Questions.triangular(10));
-		int[] b = {0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153};
+		int[] b = {1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153};
 		assertEquals(b, Questions.triangular(17));
 	}
 }
