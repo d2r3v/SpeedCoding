@@ -254,10 +254,10 @@ public class QuestionsTest {
 	public void test40() {
 		char[] a = {'e', 't', 's', 't'};
 		int[] b = {1, 3, 2, 0};
-		assertEquals("test", Questions.rearrange(a,b, int n));
+		assertEquals("test", Questions.rearrange(a,b, 4));
 		char[] c = {'A', 'O', 'R', 'P', 'R', 'M', 'G'};
 		int[] d = {5,2,4,0,1,6,3};
-		assertEquals("PROGRAM", Questions.rearrange(c,d, int n));
+		assertEquals("PROGRAM", Questions.rearrange(c,d, 7));
 	}
 	@Test
 	public void test41() {
