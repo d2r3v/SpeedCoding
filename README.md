@@ -7,7 +7,23 @@ Speed Coding
 + You have 60 minutes (1h) to complete the assigned tasks.
 + Take your time to read the question.
 + For questions that have a true/false answer, return 1 for true and 0 for false.
++ An example has been done for you
 
+## Example: Divide
+
+> The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.
+
+Given two int values , task is to divide the two numbers and return an int.
+
+### Test Cases
+
+```java
+@Test
+public void test1() {
+	assertEquals(10, FibBase.Divide(10,1));
+	assertEquals(5, FibBase.Divide(25,5));
+}
+```
 ## Question 1: Almost Palindrome
 
 > The skeleton source code for this question is in the package `fibbase`. You may import the provided code as a Gradle project in Eclipse.

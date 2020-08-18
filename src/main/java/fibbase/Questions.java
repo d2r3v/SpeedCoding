@@ -60,11 +60,13 @@ public static String filename(String n)
 }
 public static int disarium(int n)
 {
-	return 2;
+
+    return 2;
 }
 public static int special(int n)
 {
-	return 2;
+
+    return 2;
 }
 public static int equalarr(int[] a, int[] b, int n, int m)
 {
@@ -77,7 +79,8 @@ public static int[] prime(int n)
 }
 public static int automorphic(int n)
 {
-	return 2;
+
+    return 2;
 }
 public static int alphabetical(String n)
 {
@@ -90,7 +93,8 @@ public static String arrtostr(char[] a,int n)
 }
 public static int specialarr(int[] a, int n)
 {
-	return 2;
+
+    return 2;
 }
 public static int series1(int n)
 {
@@ -99,7 +103,8 @@ public static int series1(int n)
 }
 public static int anagram(String n, String m)
 {
-	return 2;
+
+    return 2;
 }
 public static double netbill(double n)
 {
@@ -162,7 +167,8 @@ public static int missingnum(int[] n, int m)
 }
 public static int apocalyptic(int n)
 {
-	return 2;
+
+    return 2;
 }
 public static int alternate(int[] n, int m)
 {
@@ -171,7 +177,8 @@ public static int alternate(int[] n, int m)
 }
 public static int sorting(int[] n, int m)
 {
-	return 2;
+
+    return 2;
 }
 public static String hashing(String n)
 {
@@ -180,7 +187,8 @@ public static String hashing(String n)
 }
 public static int diagonalmatrix(int[][] n, int m)
 {
-	return 2;
+
+    return 2;
 }
 public static int armstrong(int n)
 {
@@ -198,11 +206,13 @@ public static String rearrange (char[] a, int[] n, int m)
 }
 public static int ascending(int n)
 {
-	return 2;
+
+    return 2;
 }
 public static int descending(int n)
 {
-	return 2;
+
+    return 2;
 }
 public static String[] alphasort(String[] n, int m)
 {
@@ -225,7 +235,8 @@ public static int semiprime(int n)
 }
 public static int balanced(int n)
 {
-	return 2;
+
+    return 2;
 }
 public static int even(int[] n,int m)
 {
